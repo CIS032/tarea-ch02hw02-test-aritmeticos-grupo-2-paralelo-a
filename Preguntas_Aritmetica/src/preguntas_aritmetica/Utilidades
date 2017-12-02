@@ -1,0 +1,23 @@
+
+package preguntas_aritmeticas;
+
+/**
+ *
+ * @author EvelynQuevedo
+ */
+public class Utilidades {
+     public static String[] obtenerOpciones(int respuesta) {
+        String arregloOpciones[] = new String[4];
+        int posResp = (int) (Math.random() * 4);
+        for (int i = 0; i < arregloOpciones.length; i++) {
+            if (i == posResp) {
+                arregloOpciones[i] = String.valueOf(respuesta);
+            } else {
+                int opciones = (int) (Math.random() * 50 + 1);
+                arregloOpciones[i] = String.valueOf(opciones);
+            }
+        }
+        return arregloOpciones;
+    
+}
+}
