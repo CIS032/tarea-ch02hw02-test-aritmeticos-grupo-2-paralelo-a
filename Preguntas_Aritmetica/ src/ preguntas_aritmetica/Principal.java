@@ -26,7 +26,7 @@ public class Principal {
                     String cedula = "";
                     while (cerrar) {
                         cedula = JOptionPane.showInputDialog(null, "Ingrese cedula para rendir el examen", "UNL", JOptionPane.QUESTION_MESSAGE);
-                        if (cedula.length() < 10) {
+                        if (cedula.length() < 1   || cedula.length ()>10){
                             JOptionPane.showMessageDialog(null, "Cedula Incorrecta", "Test", JOptionPane.ERROR_MESSAGE);
                         } else {
                             cerrar = false;
