@@ -51,11 +51,11 @@ public class Principal {
                                 if (opcionesArreglo1[pregunS].equals(String.valueOf(respuesta))) {
                                     JOptionPane.showMessageDialog(null, "Respuesta Correcta", "UNL", JOptionPane.INFORMATION_MESSAGE);
                                     contestada = true;
-                                    calificacion++;
+                                    calificacion= calificacion +10;
                                 } else {
                                     contestada = false;
                                     JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta + " =" + respuesta, "UNL", JOptionPane.INFORMATION_MESSAGE);
-                                    malas++;
+                                                                       malas = malas+10;
                                 }
                                 break;
                             case 2://RestaPregunta
@@ -67,11 +67,11 @@ public class Principal {
                                 if (opcionesArreglo2[pregunR].equals(String.valueOf(respuesta))) {
                                     JOptionPane.showMessageDialog(null, "Respuesta Correcta", "UNL", JOptionPane.INFORMATION_MESSAGE);
                                     contestada = true;
-                                    calificacion++;
+                                 calificacion= calificacion +10;
                                 } else {
                                     contestada = false;
                                     JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta + " =" + respuesta, "UNL", JOptionPane.INFORMATION_MESSAGE);
-                                    malas++;
+                                                                       malas = malas+10;
                                 }
                                 break;
                             case 3://Multiplicacion
@@ -83,11 +83,11 @@ public class Principal {
                                 if (opcionesArreglo3[pregunM].equals(String.valueOf(respuesta))) {
                                     JOptionPane.showMessageDialog(null, "Respuesta Correcta", "UNL", JOptionPane.INFORMATION_MESSAGE);
                                     contestada = true;
-                                    calificacion++;
+                                    calificacion= calificacion +10;
                                 } else {
                                     contestada = false;
                                     JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta + " =" + respuesta, "UNL", JOptionPane.INFORMATION_MESSAGE);
-                                    malas++;
+                                                                        malas = malas+10;
                                 }
                                 break;
                             case 4://Divicion
@@ -99,11 +99,11 @@ public class Principal {
                                 if (opcionesArreglo4[pregunD].equals(String.valueOf(respuesta))) {
                                     JOptionPane.showMessageDialog(null, "Respuesta Correcta", "UNL", JOptionPane.INFORMATION_MESSAGE);
                                     contestada = true;
-                                    calificacion++;
+                                   calificacion= calificacion +10;
                                 } else {
                                     contestada = false;
                                     JOptionPane.showMessageDialog(null, "Respuesta Inorrecta\nCorrecion: " + pregunta + " =" + respuesta, "UNL", JOptionPane.INFORMATION_MESSAGE);
-                                    malas++;
+                                    malas = malas+10;
                                 }
                                 break;
                         }
